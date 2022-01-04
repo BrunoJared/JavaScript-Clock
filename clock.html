@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> CLOCK </h1>
+    <p>
+    <script>
+
+window.alert("Start Clock")
+function printTime() {
+    var d = new Date();
+    var hours = d.getHours();
+    var mins = d.getMinutes();
+    var secs = d.getSeconds();
+    var milliseconds = d.getMilliseconds();
+    var date = d.getDate();
+    document.body.innerHTML = hours+":"+mins+":"+secs+":"+milliseconds+":"+date;
+}
+setInterval(printTime, 100);
+
+    </script>
+
+</p>
+</body>
+</html>
